@@ -154,7 +154,7 @@ footer {
 .timeline {
   display: flex;
   flex-direction: column;
-  margin-left: 10px; /* shift slightly left */
+  margin-left: 5px; /* move everything slightly left */
 }
 
 /* Each post item */
@@ -162,6 +162,7 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  position: relative;
 }
 
 /* Dot */
@@ -185,4 +186,9 @@ footer {
   font-size: 0.8rem; /* slightly smaller */
   color: #888;
   margin: 0;
+}
+
+/* REMOVE any vertical line */
+.timeline::before {
+  content: none;
 }
