@@ -193,3 +193,33 @@ footer {
   margin: 2px 0 0 0; /* slight space below post */
   padding-left: 0; /* align with post start */
 }
+
+
+.publication-item {
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.pub-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 8px 0;
+}
+
+.pub-info {
+  font-size: 0.85rem;
+  margin: 2px 0;
+}
+
+.pub-info .label {
+  color: #888; /* light grey label */
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.pub-info span + text, .pub-info span + * {
+  color: #000; /* content black */
+}
