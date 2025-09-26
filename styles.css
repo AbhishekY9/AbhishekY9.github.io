@@ -157,35 +157,28 @@ footer {
 .company-name {
   font-weight: 700;
   color: #6a1b9a;
-  margin-bottom: 4px;
-  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-size: 1.3rem; /* largest */
 }
 
-.duration {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 15px;
-}
-
+/* Timeline container */
 .timeline {
   position: relative;
-  padding-left: 25px;
-  margin-left: 5px;
-  border-left: 2px solid #ddd; /* vertical line */
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ddd; /* vertical line connecting dots */
 }
 
+/* Each post item */
 .timeline-item {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.dot {
+/* Dot marker */
+.timeline-marker {
   position: absolute;
-  left: -10px; /* aligns dot to line */
+  left: -11px; /* center dot on line */
   top: 0;
   width: 12px;
   height: 12px;
@@ -193,15 +186,17 @@ footer {
   border-radius: 50%;
 }
 
+/* Post content */
 .timeline-content .post {
   font-weight: 600;
   color: #333;
-  margin: 0;
+  font-size: 1rem;
+  margin: 0 0 2px 0;
 }
 
 .timeline-content .time {
   font-size: 0.85rem;
-  color: #666;
-  margin: 2px 0 0 0;
+  color: #888;
+  margin: 0;
 }
 
