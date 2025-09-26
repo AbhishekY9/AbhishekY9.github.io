@@ -147,55 +147,42 @@ footer {
   font-weight: 700;
   color: #6a1b9a;
   margin-bottom: 10px;
-  font-size: 1.15rem; /* slightly smaller than previous */
+  font-size: 1.15rem; /* slightly smaller than before */
 }
 
-/* Timeline */
+/* Timeline container */
 .timeline {
-  position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
-}
-
-.timeline-item {
-  position: relative;
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 25px;
+  flex-direction: column;
+  margin-left: 10px; /* shift slightly left */
 }
 
-/* Vertical line */
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 12px; /* start below first dot */
-  left: 5px; /* center of dots */
-  width: 2px;
-  height: calc(100% - 12px);
-  background: #ddd;
-  z-index: 0;
+/* Each post item */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 /* Dot */
 .timeline-marker {
-  position: relative;
-  width: 12px;
-  height: 12px;
+  width: 8px;  /* smaller dot */
+  height: 8px;
   background: #ddd;
   border-radius: 50%;
-  margin-right: 15px;
-  z-index: 1;
+  margin-right: 12px; /* space between dot and post */
+  flex-shrink: 0;
 }
 
 /* Post and Time */
 .timeline-content .post {
   font-weight: 700; /* bold */
-  font-size: 1.05rem; /* slightly smaller than company */
+  font-size: 1.05rem;
   margin: 0 0 2px 0;
 }
 
 .timeline-content .time {
-  font-size: 0.8rem; /* smaller than post */
+  font-size: 0.8rem; /* slightly smaller */
   color: #888;
   margin: 0;
 }
