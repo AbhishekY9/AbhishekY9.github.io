@@ -147,48 +147,48 @@ footer {
   font-weight: 700;
   color: #6a1b9a;
   margin-bottom: 10px;
-  font-size: 1.15rem; /* slightly smaller than before */
+  font-size: 1.15rem;
 }
 
 /* Timeline container */
 .timeline {
   display: flex;
   flex-direction: column;
-  margin-left: 5px; /* move everything slightly left */
+  margin-left: 0; /* shift entire timeline slightly left */
 }
 
 /* Each post item */
 .timeline-item {
   display: flex;
-  align-items: center;
+  align-items: center; /* aligns dot and post on same line */
   margin-bottom: 15px;
-  position: relative;
 }
 
 /* Dot */
 .timeline-marker {
-  width: 8px;  /* smaller dot */
+  width: 8px; 
   height: 8px;
   background: #ddd;
   border-radius: 50%;
-  margin-right: 12px; /* space between dot and post */
+  margin-right: 10px;
   flex-shrink: 0;
+  margin-top: 0.3em; /* adjust vertical alignment if needed */
 }
 
 /* Post and Time */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .timeline-content .post {
   font-weight: 700; /* bold */
   font-size: 1.05rem;
-  margin: 0 0 2px 0;
-}
-
-.timeline-content .time {
-  font-size: 0.8rem; /* slightly smaller */
-  color: #888;
   margin: 0;
 }
 
-/* REMOVE any vertical line */
-.timeline::before {
-  content: none;
+.timeline-content .time {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
 }
