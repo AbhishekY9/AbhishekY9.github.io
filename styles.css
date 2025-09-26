@@ -203,7 +203,7 @@ footer {
 }
 
 .pub-title {
-  font-weight: 700;
+  font-weight: 700; /* bold */
   font-size: 1.05rem;
   margin: 0 0 8px 0;
 }
@@ -222,3 +222,4 @@ footer {
 .pub-info span + text, .pub-info span + * {
   color: #000; /* content black */
 }
+
