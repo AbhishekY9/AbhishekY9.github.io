@@ -134,17 +134,6 @@ footer {
   margin-top: 50px;
 }
 
-/* Responsive */
-@media(max-width: 768px){
-  .cards {
-    flex-direction: column;
-  }
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-
 /* Experience Timeline */
 .experience-item {
   padding: 15px 20px;
@@ -158,10 +147,9 @@ footer {
   font-weight: 700;
   color: #6a1b9a;
   margin-bottom: 12px;
-  font-size: 1.3rem; /* largest */
+  font-size: 1.4rem; /* largest */
 }
 
-/* Timeline container */
 .timeline {
   position: relative;
   margin-left: 20px;
@@ -169,16 +157,14 @@ footer {
   border-left: 2px solid #ddd; /* vertical line connecting dots */
 }
 
-/* Each post item */
 .timeline-item {
   position: relative;
   margin-bottom: 20px;
 }
 
-/* Dot marker */
 .timeline-marker {
   position: absolute;
-  left: -11px; /* center dot on line */
+  left: -11px;
   top: 0;
   width: 12px;
   height: 12px;
@@ -186,17 +172,30 @@ footer {
   border-radius: 50%;
 }
 
-/* Post content */
 .timeline-content .post {
   font-weight: 600;
   color: #333;
-  font-size: 1rem;
+  font-size: 1.1rem; /* slightly smaller than company */
   margin: 0 0 2px 0;
 }
 
 .timeline-content .time {
-  font-size: 0.85rem;
+  font-size: 0.85rem; /* smallest */
   color: #888;
   margin: 0;
 }
 
+/* Responsive */
+@media(max-width: 768px){
+  .cards {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .timeline {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}
