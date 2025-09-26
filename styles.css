@@ -154,13 +154,13 @@ footer {
 .timeline {
   display: flex;
   flex-direction: column;
-  margin-left: 0; /* shift entire timeline slightly left */
+  margin-left: 0; /* shift slightly left */
 }
 
 /* Each post item */
 .timeline-item {
   display: flex;
-  align-items: center; /* aligns dot and post on same line */
+  align-items: flex-start; /* align dot with post only */
   margin-bottom: 15px;
 }
 
@@ -172,7 +172,7 @@ footer {
   border-radius: 50%;
   margin-right: 10px;
   flex-shrink: 0;
-  margin-top: 0.3em; /* adjust vertical alignment if needed */
+  margin-top: 5px; /* adjust so dot aligns with post text */
 }
 
 /* Post and Time */
@@ -190,5 +190,6 @@ footer {
 .timeline-content .time {
   font-size: 0.8rem;
   color: #888;
-  margin: 0;
+  margin: 2px 0 0 0; /* slight space below post */
+  padding-left: 0; /* align with post start */
 }
