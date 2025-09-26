@@ -147,55 +147,73 @@ footer {
   font-weight: 700;
   color: #6a1b9a;
   margin-bottom: 12px;
-  font-size: 1.4rem; /* largest */
+  font-size: 1.2rem; /* slightly bigger than posts */
 }
 
 .timeline {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 2px solid #ddd; /* vertical line connecting dots */
+  margin-left: 10px; /* left space for line/dots */
 }
 
 .timeline-item {
+  display: flex;
+  align-items: flex-start;
   position: relative;
   margin-bottom: 20px;
 }
 
-.timeline-marker {
-  position: absolute;
-  left: -11px;
-  top: 0;
+/* Left side: line + dot */
+.timeline-left {
+  position: relative;
+  width: 30px; /* fixed width for line and dot */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
   width: 12px;
   height: 12px;
   background: #ddd;
   border-radius: 50%;
+  z-index: 1;
 }
 
-.timeline-content .post {
+.line {
+  flex: 1;
+  width: 2px;
+  background: #ddd;
+  margin-top: -1px; /* connect line exactly to dot */
+}
+
+/* Right side: post + time */
+.timeline-right {
+  padding-left: 15px; /* space between line and content */
+}
+
+.timeline-right .post {
   font-weight: 600;
   color: #333;
   font-size: 1.1rem; /* slightly smaller than company */
   margin: 0 0 2px 0;
 }
 
-.timeline-content .time {
-  font-size: 0.85rem; /* smallest */
+.timeline-right .time {
+  font-size: 0.85rem;
   color: #888;
   margin: 0;
 }
 
+/* Remove line for last item */
+.timeline-item:last-child .line {
+  display: none;
+}
+
 /* Responsive */
 @media(max-width: 768px){
-  .cards {
-    flex-direction: column;
-  }
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .timeline {
-    margin-left: 15px;
-    padding-left: 15px;
+  .timeline-right {
+    padding-left: 10px;
   }
 }
