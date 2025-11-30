@@ -85,6 +85,18 @@ nav .nav-links li a:hover {
   margin-bottom: 30px;
 }
 
+/* Profile paragraph enhancement */
+.profile-text {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-left: 5px solid #6a1b9a;
+}
+
 /* Cards */
 .cards {
   display: flex;
@@ -154,25 +166,25 @@ footer {
 .timeline {
   display: flex;
   flex-direction: column;
-  margin-left: 0; /* shift slightly left */
+  margin-left: 0;
 }
 
 /* Each post item */
 .timeline-item {
   display: flex;
-  align-items: flex-start; /* align dot with post only */
+  align-items: flex-start;
   margin-bottom: 15px;
 }
 
 /* Dot */
 .timeline-marker {
-  width: 8px; 
+  width: 8px;
   height: 8px;
   background: #ddd;
   border-radius: 50%;
   margin-right: 10px;
   flex-shrink: 0;
-  margin-top: 5px; /* adjust so dot aligns with post text */
+  margin-top: 5px;
 }
 
 /* Post and Time */
@@ -182,7 +194,7 @@ footer {
 }
 
 .timeline-content .post {
-  font-weight: 700; /* bold */
+  font-weight: 700;
   font-size: 1.05rem;
   margin: 0;
 }
@@ -190,8 +202,7 @@ footer {
 .timeline-content .time {
   font-size: 0.8rem;
   color: #888;
-  margin: 2px 0 0 0; /* slight space below post */
-  padding-left: 0; /* align with post start */
+  margin: 2px 0 0 0;
 }
 
 .publication-item {
@@ -203,7 +214,7 @@ footer {
 }
 
 .pub-title {
-  font-weight: 700; /* bold */
+  font-weight: 700;
   font-size: 1.05rem;
   margin: 0 0 8px 0;
 }
@@ -214,12 +225,11 @@ footer {
 }
 
 .pub-info .label {
-  color: #888; /* light grey label */
+  color: #888;
   font-weight: 600;
   margin-right: 4px;
 }
 
 .pub-info span + text, .pub-info span + * {
-  color: #000; /* content black */
+  color: #000;
 }
-
